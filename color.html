@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветовые модели</title>
+    <link rel="stylesheet" href="colot.css">
+</head>
+<body>
+    <div class="container">
+
+        <img id="loadedImage" src="circle.png" alt="image" style="max-width:100%; cursor:crosshair;" />
+        <canvas id="imageCanvas" style="display:none;"></canvas>
+        <div id="colorPreview"></div>
+
+        <!-- RGB модель -->
+        <div class="color-model">
+            <h2>RGB</h2>
+            <label for="r">R:</label>
+            <input type="range" id="r" min="0" max="255" value="128">
+            <input type="number" id="r_val" min="0" max="255" value="128"><br>
+
+            <label for="g">G:</label>
+            <input type="range" id="g" min="0" max="255" value="128">
+            <input type="number" id="g_val" min="0" max="255" value="128"><br>
+
+            <label for="b">B:</label>
+            <input type="range" id="b" min="0" max="255" value="128">
+            <input type="number" id="b_val" min="0" max="255" value="128"><br>
+        </div>
+
+        <!-- XYZ модель -->
+        <div class="color-model">
+            <h2>XYZ</h2>
+            <label for="x">X:</label>
+            <input type="range" id="x" min="0" max="100" value="50">
+            <input type="number" id="x_val" min="0" max="100" value="50"><br>
+
+            <label for="y">Y:</label>
+            <input type="range" id="y" min="0" max="100" value="50">
+            <input type="number" id="y_val" min="0" max="100" value="50"><br>
+
+            <label for="z">Z:</label>
+            <input type="range" id="z" min="0" max="100" value="50">
+            <input type="number" id="z_val" min="0" max="100" value="50"><br>
+        </div>
+
+        <!-- HLS модель -->
+        <div class="color-model">
+            <h2>HLS</h2>
+            <label for="h">H:</label>
+            <input type="range" id="h" min="0" max="360" value="180">
+            <input type="number" id="h_val" min="0" max="360" value="180"><br>
+
+            <label for="l">L:</label>
+            <input type="range" id="l" min="0" max="100" value="50">
+            <input type="number" id="l_val" min="0" max="100" value="50"><br>
+
+            <label for="s">S:</label>
+            <input type="range" id="s" min="0" max="100" value="50">
+            <input type="number" id="s_val" min="0" max="100" value="50"><br>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

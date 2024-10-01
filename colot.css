@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.color-model {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+.color-preview {
+    margin-top: 20px;
+    grid-column: span 3;
+}
